@@ -23,4 +23,11 @@ public class LoginController : ControllerBase
     var login = _loginService.AdicionarLogin(dados);
     return Ok(_loginService.ListarLogin());
  }
+
+ [HttpGet]
+
+ public IActionResult ListarLogin()
+ {
+    return Ok(_loginService.ListarLogin());
+ }
 }
